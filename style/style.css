@@ -9,7 +9,15 @@ body {
 }
 
 .active{
-  display:flex
+  display:flex;
+}
+
+.disabled{
+  display: none;
+}
+
+.selected { 
+  border: 2px solid #aaa; 
 }
 
 header{
@@ -84,6 +92,8 @@ aside{
   width: 6rem;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
 }
 
 .contacts-area-functions{
@@ -103,7 +113,6 @@ aside{
   z-index: 1000;
   width: 100%;
   height: 100vh;
-  display: none;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -115,6 +124,7 @@ aside{
   padding: .2rem;
   border-radius: 1rem;
   max-width: 30%;
+  position: relative;
 }
 
 .form-modal-content{
@@ -133,6 +143,25 @@ aside{
   gap: 3rem;
   color: #222;
   border-bottom: 1px solid #ddd;
+}
+
+#title-form-area{
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+#title-form-area button,
+#title-form-area h3{
+  border: none;
+}
+
+.fa-xmark{
+  background-color: #B36320;
+  padding: .5rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: .2rem;
 }
 
 .form-modal-content input{

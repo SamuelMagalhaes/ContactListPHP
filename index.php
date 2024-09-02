@@ -40,10 +40,13 @@
     </div>
   </section>
  </main>
- <section class="modal">
+ <section class="modal disabled" id="modal">
   <div class="form-modal-border">
     <form class="form-modal-content">
-        <h3>Add Contact</h3>
+        <div id="title-form-area">
+          <h3>Add Contact</h3>
+          <button type="reset" class="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
         <div>
           <label for="Name">Nome</label>
           <input type="text" name="Name" id="Name">
@@ -74,6 +77,7 @@
     </form>
   </div>
  </section>
- <script src="./scripts/script.js"></script>
+ <script src="./scripts/modal.js"></script>
+ <script src="./scripts/formData.js"></script>
 </body>
 </html>
